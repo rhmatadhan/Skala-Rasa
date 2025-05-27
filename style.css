@@ -1,0 +1,167 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fffdf7;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Animasi Fade In */
+section,
+header,
+footer {
+    animation: fadeIn 1s ease-in both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero */
+#hero {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#hero a {
+    background-color: #ffffff;
+    color: #ff4d6d;
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: inline-block;
+}
+
+#hero a:hover {
+    background-color: #ffe9ec;
+    transform: scale(1.05);
+}
+
+/* Section Umum */
+section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #ff4d6d;
+    margin-bottom: 1.5rem;
+}
+
+/* Menu */
+#menu ul {
+    list-style: none;
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#menu li {
+    background: #fff0f5;
+    border-left: 6px solid #ffa07a;
+    padding: 1.2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+#menu li:hover {
+    transform: translateY(-5px);
+}
+
+#menu h3 {
+    margin-bottom: 0.5rem;
+    color: #d6336c;
+}
+
+/* Testimoni */
+blockquote {
+    background: #e3fcec;
+    border-left: 6px solid #38b000;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    font-style: italic;
+    color: #2d6a4f;
+}
+
+/* Cara Pesan */
+ol {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+ol li {
+    margin-bottom: 0.5rem;
+}
+
+/* Kontak */
+#kontak a {
+    color: #ff4d6d;
+    font-weight: bold;
+}
+
+#kontak a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #ff4d6d;
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 4rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
